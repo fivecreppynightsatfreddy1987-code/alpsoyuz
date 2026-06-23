@@ -2,14 +2,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
     <meta name="description" content="Профессиональные высотные работы в Воронеже. Архитектурная подсветка, монтаж металлоконструкций, замена стеклопакетов и ремонт элеваторов. Опыт более 20 лет.">
     
     <meta property="og:title" content="АльпСоюз — Высотные работы Воронеж">
     <meta property="og:description" content="Профессиональные высотные работы любой сложности в Воронеже и области. Монтаж, ремонт, клининг на высоте.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://твой-домен.ru/"> <meta property="og:image" content="https://твой-домен.ru/2.jpg"> <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta property="og:url" content="https://твой-домен.ru/"> 
+    <meta property="og:image" content="https://твой-домен.ru/2.jpg"> 
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     
     <title>АльпСоюз — Высотные работы Воронеж</title>
     
@@ -33,7 +36,6 @@
     </script>
 
     <style>
-        /* CSS остался без изменений, как в твоем оригинале */
         :root {
             --bg-main: #0a0a0a;
             --bg-card: #141414;
@@ -54,7 +56,7 @@
         body {
             background-color: var(--bg-main);
             color: var(--text-main);
-            padding-bottom: 70px;
+            padding-bottom: calc(85px + env(safe-area-inset-bottom, 0px));
         }
 
         header {
@@ -64,6 +66,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
+            transition: padding 0.1s ease;
         }
 
         .header-container {
@@ -145,6 +148,8 @@
             display: flex;
             flex-direction: column;
             transition: border-color 0.25s ease, box-shadow 0.25s ease;
+            appearance: none;
+            -webkit-appearance: none;
         }
 
         .card[open] {
@@ -157,10 +162,12 @@
             list-style: none;
             outline: none;
         }
+        
         summary:focus-visible {
             outline: 2px solid var(--accent);
             outline-offset: -2px;
         }
+        
         summary::-webkit-details-marker {
             display: none;
         }
@@ -215,11 +222,11 @@
 
         .card-expanded {
             padding: 0 20px 20px 20px;
-            animation: fadeInCard 0.3s ease-out;
+            animation: fadeInCard 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         @keyframes fadeInCard {
-            from { opacity: 0; transform: translateY(-8px); }
+            from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
@@ -249,11 +256,12 @@
             display: block;
             padding: 3px;
             cursor: zoom-in;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
 
         .photo-grid img:hover {
             transform: scale(1.03);
+            border-color: var(--text-muted);
         }
         
         .photo-grid img:focus-visible {
@@ -261,6 +269,7 @@
             transform: scale(1.03);
         }
 
+        /* Кроссплатформенный Лайтбокс */
         .lightbox {
             display: none;
             position: fixed;
@@ -268,14 +277,16 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.92);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+            height: 100dvh; /* Динамическая высота под мобильный Safari */
+            background-color: rgba(0, 0, 0, 0.94);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             justify-content: center;
             align-items: center;
             user-select: none;
+            -webkit-user-select: none;
             touch-action: none; 
+            overscroll-behavior: none; /* Защита от pull-to-refresh на Android */
         }
 
         .lightbox.active {
@@ -284,22 +295,22 @@
 
         .lightbox-content {
             max-width: 92%;
-            max-height: 82%;
+            max-height: 78%;
             object-fit: contain;
             border-radius: 4px;
-            box-shadow: 0 0 30px rgba(0,0,0,0.8);
-            animation: zoomIn 0.2s ease-out;
+            box-shadow: 0 0 30px rgba(0,0,0,0.9);
+            animation: zoomIn 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
             pointer-events: none; 
         }
 
         @keyframes zoomIn {
-            from { transform: scale(0.95); opacity: 0; }
+            from { transform: scale(0.92); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
 
         .close-lightbox {
             position: absolute;
-            top: 20px;
+            top: calc(20px + env(safe-area-inset-top, 0px));
             right: 20px;
             color: #ffffff;
             font-size: 36px;
@@ -327,7 +338,7 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            padding: 0 25px;
+            padding: 0 20px;
             box-sizing: border-box;
             pointer-events: none;
             z-index: 2050;
@@ -335,11 +346,11 @@
 
         .lightbox-nav span {
             color: #ffffff;
-            font-size: 26px;
+            font-size: 24px;
             cursor: pointer;
             background: rgba(255,255,255,0.08);
-            width: 55px;
-            height: 55px;
+            width: 52px;
+            height: 52px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -354,9 +365,10 @@
             outline: none;
         }
 
+        /* Панель кнопок действий с учетом Safe Area на iOS */
         .compact-action-bar {
             position: fixed;
-            bottom: 15px;
+            bottom: calc(15px + env(safe-area-inset-bottom, 0px));
             right: 15px;
             display: flex;
             gap: 8px;
@@ -369,12 +381,17 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            padding: 10px 16px;
+            padding: 11px 18px;
             border-radius: 20px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+            transition: transform 0.2s ease;
+        }
+        
+        .action-btn:active {
+            transform: scale(0.96);
         }
 
         .action-btn.call {
@@ -391,7 +408,7 @@
         footer {
             background-color: #000000;
             border-top: 1px solid var(--border);
-            padding: 25px 20px;
+            padding: 30px 20px;
             text-align: center;
             margin-top: 50px;
         }
@@ -410,12 +427,12 @@
                 grid-template-columns: repeat(3, 1fr);
             }
             .compact-action-bar {
-                bottom: 25px;
+                bottom: calc(25px + env(safe-area-inset-bottom, 0px));
                 right: 25px;
             }
             .action-btn {
                 font-size: 12px;
-                padding: 12px 20px;
+                padding: 12px 22px;
             }
         }
 
@@ -659,6 +676,7 @@
             const closeBtn = document.querySelector('.close-lightbox');
             const prevBtn = document.getElementById('prev-btn');
             const nextBtn = document.getElementById('next-btn');
+            const header = document.querySelector('header');
             
             let currentImages = [];
             let currentIndex = 0;
@@ -666,16 +684,50 @@
             let touchStartX = 0;
             let touchEndX = 0;
 
-            // Функция для открытия лайтбокса с блокировкой скролла страницы
+            // Находим ширину полосы прокрутки, чтобы избежать прыжков макета на ПК
+            function getScrollbarWidth() {
+                return window.innerWidth - document.documentElement.clientWidth;
+            }
+
+            // Умная предзагрузка изображений (Preload следующих и предыдущих картинок)
+            function preloadAdjacentImages() {
+                if (currentImages.length <= 1) return;
+                const prevIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+                const nextIndex = (currentIndex + 1) % currentImages.length;
+                
+                const imgPrev = new Image();
+                imgPrev.src = currentImages[prevIndex];
+                
+                const imgNext = new Image();
+                imgNext.src = currentImages[nextIndex];
+            }
+
+            // Функция для открытия лайтбокса с полной блокировкой скролла на всех OS
             function openLightbox() {
+                const sbWidth = getScrollbarWidth();
+                
                 lightbox.classList.add('active');
                 document.body.style.overflow = 'hidden';
+                document.documentElement.style.overflow = 'hidden';
+                
+                // Если есть вертикальный скроллбар на ПК, компенсируем его уход
+                if (sbWidth > 0) {
+                    document.body.style.paddingRight = `${sbWidth}px`;
+                    if (header) {
+                        header.style.paddingRight = `calc(20px + ${sbWidth}px)`;
+                    }
+                }
             }
 
             // Функция для закрытия лайтбокса и возврата скролла
             function closeLightbox() {
                 lightbox.classList.remove('active');
                 document.body.style.overflow = '';
+                document.documentElement.style.overflow = '';
+                document.body.style.paddingRight = '';
+                if (header) {
+                    header.style.paddingRight = '';
+                }
             }
 
             document.querySelectorAll('.card').forEach(card => {
@@ -694,7 +746,7 @@
                         openLightbox();
                     });
 
-                    // Открытие по нажатию Enter (для доступности с клавиатуры)
+                    // Открытие по нажатию Enter (для доступности)
                     img.addEventListener('keydown', (e) => {
                         if (e.key === 'Enter') {
                             e.preventDefault();
@@ -713,6 +765,7 @@
 
             function updateLightboxImage() {
                 lightboxImg.src = currentImages[currentIndex];
+                preloadAdjacentImages(); // Запускаем фоновую предзагрузку соседей
             }
 
             prevBtn.addEventListener('click', (e) => {
@@ -729,7 +782,7 @@
                 updateLightboxImage();
             });
             
-            // Нажатие Enter на кнопки навигации в лайтбоксе
+            // Нажатие Enter на кнопках навигации внутри лайтбокса
             [prevBtn, nextBtn, closeBtn].forEach(btn => {
                 btn.addEventListener('keydown', (e) => {
                     if (e.key === 'Enter') {
@@ -739,6 +792,7 @@
                 });
             });
 
+            // Корректные кроссплатформенные свайпы
             lightbox.addEventListener('touchstart', (e) => {
                 touchStartX = e.changedTouches[0].screenX;
             }, { passive: true });
@@ -747,6 +801,11 @@
                 touchEndX = e.changedTouches[0].screenX;
                 handleSwipeGesture();
             }, { passive: true });
+
+            // ЖЕСТКАЯ блокировка системных свайпов (включая iOS Safari и Android pull-to-refresh)
+            lightbox.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+            }, { passive: false });
 
             function handleSwipeGesture() {
                 const swipeThreshold = 40; 
