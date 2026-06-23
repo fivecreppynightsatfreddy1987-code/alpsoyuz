@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    
+    <meta name="description" content="Профессиональные высотные работы в Воронеже. Архитектурная подсветка, монтаж металлоконструкций, замена стеклопакетов и ремонт элеваторов. Опыт более 20 лет.">
+    
+    <meta property="og:title" content="АльпСоюз — Высотные работы Воронеж">
+    <meta property="og:description" content="Профессиональные высотные работы любой сложности в Воронеже и области. Монтаж, ремонт, клининг на высоте.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://твой-домен.ru/"> <meta property="og:image" content="https://твой-домен.ru/2.jpg"> <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
     <title>АльпСоюз — Высотные работы Воронеж</title>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "АльпСоюз",
+      "description": "Профессиональные высотные работы и промышленный альпинизм в Воронеже.",
+      "telephone": "+7-908-132-40-57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Воронеж",
+        "addressCountry": "RU"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Максим Бибиков"
+      }
+    }
+    </script>
+
     <style>
+        /* CSS остался без изменений, как в твоем оригинале */
         :root {
             --bg-main: #0a0a0a;
             --bg-card: #141414;
@@ -129,6 +157,10 @@
             list-style: none;
             outline: none;
         }
+        summary:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: -2px;
+        }
         summary::-webkit-details-marker {
             display: none;
         }
@@ -223,8 +255,12 @@
         .photo-grid img:hover {
             transform: scale(1.03);
         }
+        
+        .photo-grid img:focus-visible {
+            outline: 2px solid var(--accent);
+            transform: scale(1.03);
+        }
 
-        /* Улучшенный Лайтбокс */
         .lightbox {
             display: none;
             position: fixed;
@@ -280,9 +316,10 @@
             z-index: 2100;
         }
 
-        .close-lightbox:hover {
+        .close-lightbox:hover, .close-lightbox:focus-visible {
             background: var(--accent);
             color: #000000;
+            outline: none;
         }
 
         .lightbox-nav {
@@ -311,9 +348,10 @@
             transition: background 0.2s, color 0.2s;
         }
 
-        .lightbox-nav span:hover {
+        .lightbox-nav span:hover, .lightbox-nav span:focus-visible {
             background: var(--accent);
             color: #000000;
+            outline: none;
         }
 
         .compact-action-bar {
@@ -420,14 +458,14 @@
                 <div class="card-expanded">
                     <p class="card-desc">Монтаж эстетичного контурного освещения, мощных прожекторов направленного света и праздничной декоративной иллюминации на коммерческих фасадах, высотных башнях и мостовых сооружениях.</p>
                     <div class="photo-grid">
-                        <img src="15.jpg" alt="Иллюминация под мостом">
-                        <img src="16.jpg" alt="Подсветка моста с флагами">
-                        <img src="4.jpg" alt="Подсветка конструкций">
-                        <img src="13.jpg" alt="Подсветка фасада башни">
-                        <img src="18.jpg" alt="Подъем элементов освещения">
-                        <img src="23.jpg" alt="Восстановление карниза">
-                        <img src="24.jpg" alt="Армирование кирпичной кладки">
-                        <img src="21.jpg" alt="Дополнительное фото подсветки">
+                        <img src="15.jpg" alt="Иллюминация под мостом" tabindex="0">
+                        <img src="16.jpg" alt="Подсветка моста с флагами" tabindex="0">
+                        <img src="4.jpg" alt="Подсветка конструкций" tabindex="0">
+                        <img src="13.jpg" alt="Подсветка фасада башни" tabindex="0">
+                        <img src="18.jpg" alt="Подъем элементов освещения" tabindex="0">
+                        <img src="23.jpg" alt="Восстановление карниза" tabindex="0">
+                        <img src="24.jpg" alt="Армирование кирпичной кладки" tabindex="0">
+                        <img src="21.jpg" alt="Дополнительное фото подсветки" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -443,10 +481,10 @@
                 <div class="card-expanded">
                     <p class="card-desc">Установка и своевременная замена тяжелых стеклопакетов большой площади, панорамного фасадного остекления. Выполнение монтажных работ на любой высоте с использованием надежных вакуумных присосок.</p>
                     <div class="photo-grid">
-                        <img src="3.jpg" alt="Высотный монтаж остекления">
-                        <img src="19.jpg" alt="Подготовка крупногабаритного стекла">
-                        <img src="20.jpg" alt="Монтаж панорамного остекления">
-                        <img src="22.jpg" alt="Реконструкция элементов остекления">
+                        <img src="3.jpg" alt="Высотный монтаж остекления" tabindex="0">
+                        <img src="19.jpg" alt="Подготовка крупногабаритного стекла" tabindex="0">
+                        <img src="20.jpg" alt="Монтаж панорамного остекления" tabindex="0">
+                        <img src="22.jpg" alt="Реконструкция элементов остекления" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -462,9 +500,9 @@
                 <div class="card-expanded">
                     <p class="card-desc">Фиксация и качественная сборка вертикальных трубопроводов, массивных промышленных воздуховодов, несущих кронштейнов, защитных экранов и сложных инженерных металлосистем на фасадах зданий.</p>
                     <div class="photo-grid">
-                        <img src="7.jpg" alt="Монтажные элементы">
-                        <img src="8.jpg" alt="Вертикальный трубопровод на фасаде">
-                        <img src="29.jpg" alt="Новый элемент металлоконструкции">
+                        <img src="7.jpg" alt="Монтажные элементы" tabindex="0">
+                        <img src="8.jpg" alt="Вертикальный трубопровод на фасаде" tabindex="0">
+                        <img src="29.jpg" alt="Новый элемент металлоконструкции" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -480,7 +518,7 @@
                 <div class="card-expanded">
                     <p class="card-desc">Профессиональные сварочные высотные работы любой сложности. Сварка каркасов, трубопроводов, газоходов и исправление дефектов конструкций с соблюдением всех стандартов безопасности.</p>
                     <div class="photo-grid">
-                        <img src="5.jpg" alt="Сварка трубы на высоте">
+                        <img src="5.jpg" alt="Сварка трубы на высоте" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -496,7 +534,7 @@
                 <div class="card-expanded">
                     <p class="card-desc">Безопасный подъем элементов повышенной массы, кондиционеров, вентиляционного оборудования и крупногабаритной мебели на любую высоту с применением специализированных лебедок и такелажных систем.</p>
                     <div class="photo-grid">
-                        <img src="17.jpg" alt="Альпинист на такелажных работах">
+                        <img src="17.jpg" alt="Альпинист на такелажных работах" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -512,9 +550,9 @@
                 <div class="card-expanded">
                     <p class="card-desc">Монтаж и квалифицированное обслуживание слаботочных сетей на высоте: качественная прокладка кабелей, фиксация уличных камер видеонаблюдения, беспроводных датчиков и сетевых модулей.</p>
                     <div class="photo-grid">
-                        <img src="2.jpg" alt="Монтаж иллюминации">
-                        <img src="28.jpg" alt="Индустриальный мониторинг">
-                        <img src="27.jpg" alt="Промышленные потолочные системы">
+                        <img src="2.jpg" alt="Монтаж иллюминации" tabindex="0">
+                        <img src="28.jpg" alt="Индустриальный мониторинг" tabindex="0">
+                        <img src="27.jpg" alt="Промышленные потолочные системы" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -530,7 +568,7 @@
                 <div class="card-expanded">
                     <p class="card-desc">Монтаж, стыковка и капитальная замена секций промышленных вертикальных газоходов, комплексных систем дымоудаления, вентиляционных шахт и проведение качественной теплоизоляции вытяжных труб.</p>
                     <div class="photo-grid">
-                        <img src="14.jpg" alt="Контурное освещение здания">
+                        <img src="14.jpg" alt="Контурное освещение здания" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -546,8 +584,8 @@
                 <div class="card-expanded">
                     <p class="card-desc">Локальные аварийно-восстановительные работы на фасадах: ремонт и надежное армирование старой кирпичной кладки, реставрация разрушенных карнизов, гидроизоляция швов и устранение аварийных участков.</p>
                     <div class="photo-grid">
-                        <img src="26.jpg" alt="Внутренние галереи элеватора">
-                        <img src="6.jpg" alt="Фиксация трубных креплений">
+                        <img src="26.jpg" alt="Внутренние галереи элеватора" tabindex="0">
+                        <img src="6.jpg" alt="Фиксация трубных креплений" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -563,10 +601,10 @@
                 <div class="card-expanded">
                     <p class="card-desc">Профессиональный промышленный клининг и комплексный ремонт силосов, надежная герметизация межпанельных стыков, покраска металлоконструкций, восстановление галерей и внутренних систем.</p>
                     <div class="photo-grid">
-                        <img src="9.jpg" alt="Слаботочка на объекте">
-                        <img src="10.jpg" alt="Кабельные трассы элеватора">
-                        <img src="30.jpg" alt="Ремонтные работы на силосе">
-                        <img src="31.jpg" alt="Монтаж оборудования элеватора">
+                        <img src="9.jpg" alt="Слаботочка на объекте" tabindex="0">
+                        <img src="10.jpg" alt="Кабельные трассы элеватора" tabindex="0">
+                        <img src="30.jpg" alt="Ремонтные работы на силосе" tabindex="0">
+                        <img src="31.jpg" alt="Монтаж оборудования элеватора" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -582,9 +620,9 @@
                 <div class="card-expanded">
                     <p class="card-desc">Профессиональное мытье окон, панорамного остекления, витражей и фасадов жилых и коммерческих зданий на любой высоте. Надежное удаление сложных строительных, сезонных и атмосферных загрязнений.</p>
                     <div class="photo-grid">
-                        <img src="11.jpg" alt="Архитектурная подсветка фасада">
-                        <img src="12.jpg" alt="Высотная мойка">
-                        <img src="1.jpg" alt="Монтаж металлоконструкций">
+                        <img src="11.jpg" alt="Архитектурная подсветка фасада" tabindex="0">
+                        <img src="12.jpg" alt="Высотная мойка" tabindex="0">
+                        <img src="1.jpg" alt="Монтаж металлоконструкций" tabindex="0">
                     </div>
                 </div>
             </details>
@@ -593,11 +631,11 @@
     </main>
 
     <div id="lightbox" class="lightbox">
-        <span class="close-lightbox">&times;</span>
+        <span class="close-lightbox" tabindex="0" role="button" aria-label="Закрыть галерею">&times;</span>
         <img class="lightbox-content" id="lightbox-img" src="" alt="">
         <div class="lightbox-nav">
-            <span id="prev-btn">&#10094;</span>
-            <span id="next-btn">&#10095;</span>
+            <span id="prev-btn" tabindex="0" role="button" aria-label="Предыдущее фото">&#10094;</span>
+            <span id="next-btn" tabindex="0" role="button" aria-label="Следующее фото">&#10095;</span>
         </div>
     </div>
 
@@ -607,7 +645,10 @@
     </div>
 
     <footer>
-        <p style="color: var(--accent); font-size: 14px; font-weight: bold; margin-bottom: 8px; letter-spacing: 0.5px;">Максим Бибиков</p>
+        <address style="font-style: normal;">
+            <p style="color: var(--accent); font-size: 14px; font-weight: bold; margin-bottom: 8px; letter-spacing: 0.5px;">Максим Бибиков</p>
+            <p style="margin-bottom: 8px;"><a href="tel:+79081324057" style="color: var(--text-main); text-decoration: none;">+7 (908) 132-40-57</a></p>
+        </address>
         <p>&copy; 2026 АльпСоюз Воронеж. Все права защищены.</p>
     </footer>
 
@@ -625,10 +666,23 @@
             let touchStartX = 0;
             let touchEndX = 0;
 
+            // Функция для открытия лайтбокса с блокировкой скролла страницы
+            function openLightbox() {
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Функция для закрытия лайтбокса и возврата скролла
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
             document.querySelectorAll('.card').forEach(card => {
                 const thumbImgs = Array.from(card.querySelectorAll('.photo-grid img'));
                 
                 thumbImgs.forEach(img => {
+                    // Открытие по клику
                     img.addEventListener('click', (e) => {
                         e.preventDefault();
                         e.stopPropagation();
@@ -637,7 +691,15 @@
                         currentIndex = currentImages.indexOf(img.src);
                         
                         updateLightboxImage();
-                        lightbox.classList.add('active');
+                        openLightbox();
+                    });
+
+                    // Открытие по нажатию Enter (для доступности с клавиатуры)
+                    img.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter') {
+                            e.preventDefault();
+                            img.click();
+                        }
                     });
                 });
 
@@ -666,6 +728,16 @@
                 currentIndex = (currentIndex + 1) % currentImages.length;
                 updateLightboxImage();
             });
+            
+            // Нажатие Enter на кнопки навигации в лайтбоксе
+            [prevBtn, nextBtn, closeBtn].forEach(btn => {
+                btn.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        btn.click();
+                    }
+                });
+            });
 
             lightbox.addEventListener('touchstart', (e) => {
                 touchStartX = e.changedTouches[0].screenX;
@@ -687,19 +759,17 @@
                 }
             }
 
-            closeBtn.addEventListener('click', () => {
-                lightbox.classList.remove('active');
-            });
+            closeBtn.addEventListener('click', closeLightbox);
 
             lightbox.addEventListener('click', (e) => {
                 if (e.target === lightbox) {
-                    lightbox.classList.remove('active');
+                    closeLightbox();
                 }
             });
 
             document.addEventListener('keydown', (e) => {
                 if (!lightbox.classList.contains('active')) return;
-                if (e.key === 'Escape') lightbox.classList.remove('active');
+                if (e.key === 'Escape') closeLightbox();
                 if (e.key === 'ArrowLeft') prevBtn.click();
                 if (e.key === 'ArrowRight') nextBtn.click();
             });
