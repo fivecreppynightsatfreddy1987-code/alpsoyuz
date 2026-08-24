@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <meta name="description" content="Профессиональные высотные работы в Воронеже и области. Архитектурная подсветка, монтаж металлоконструкций, замена стеклопакетов, ремонт фасадов и конструкций. Договор и гарантия.">
+    <meta name="keywords" content="промышленный альпинизм, высотные работы, АльпСоюз, Воронеж, ремонт фасадов, герметизация швов, замена стеклопакетов, монтаж металлоконструкций, промальп">
+    
+    <meta property="og:title" content="АльпСоюз — Промышленный альпинизм и высотные работы в Воронеже">
+    <meta property="og:description" content="Высотные работы различной сложности в Воронеже и области. Аттестованные специалисты, сертифицированное снаряжение, официальный договор.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpsoyuz.pro/"> 
+    <meta property="og:image" content="https://alpsoyuz.pro/2.jpg"> 
+    
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <title>АльпСоюз — Промышленный альпинизм Воронеж | ИП Бибиков М.В.</title>
+    
+    <!-- Расширенная микроразметка Schema.org с полными реквизитами ИП -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "АльпСоюз",
+      "legalName": "Индивидуальный предприниматель Бибиков Максим Валерьевич",
+      "description": "Профессиональные высотные работы, монтаж и промышленный альпинизм в Воронеже.",
+      "telephone": "+7-908-132-40-57",
+      "email": "89081324057@mail.ru",
+      "taxID": "366516349522",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Малышевская, д. 30",
+        "addressLocality": "Воронеж",
+        "addressRegion": "Воронежская область",
+        "postalCode": "394000",
+        "addressCountry": "RU"
+      },
+      "openingHours": "Mo-Su 08:00-20:00",
+      "founder": {
+        "@type": "Person",
+        "name": "Максим Валерьевич Бибиков"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-main: #0a0a0a;
+            --bg-card: #141414;
+            --accent: #ffcc00;
+            --text-main: #ffffff;
+            --text-muted: #aaaaaa;
+            --border: #262626;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            padding-bottom: calc(85px + env(safe-area-inset-bottom, 0px));
+        }
+
+        header {
+            background-color: #000000;
+            border-bottom: 2px solid var(--accent);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: padding 0.1s ease;
+        }
+
+        .header-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .phone-top {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(10,10,10,1) 100%), 
+                        url('2.jpg') center/cover no-repeat;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 50px 0 25px 0;
+            padding-left: 10px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .feature-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .feature-item h3 {
+            color: var(--accent);
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .feature-item p {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            align-items: start; 
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.25s ease, box-shadow 0.25s ease;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        .card[open] {
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
+        }
+
+        summary {
+            cursor: pointer;
+            list-style: none;
+            outline: none;
+        }
+        
+        summary:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: -2px;
+        }
+        
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .card-main-img {
+            width: 100%;
+            height: 260px;
+            object-fit: contain;
+            background-color: #111111;
+            display: block;
+            padding: 5px;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            transition: color 0.2s ease;
+        }
+
+        .card[open] .card-title {
+            color: var(--accent);
+        }
+
+        .card-action-text {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .card-action-text::after {
+            content: '↓';
+            font-weight: bold;
+        }
+
+        .card[open] .card-action-text {
+            color: var(--accent);
+        }
+        .card[open] .card-action-text::after {
+            content: '↑';
+        }
+
+        .card-expanded {
+            padding: 0 20px 20px 20px;
+            animation: fadeInCard 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes fadeInCard {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card-desc {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 15px;
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            background-color: #0d0d0d;
+            display: block;
+            padding: 3px;
+            cursor: zoom-in;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.03);
+            border-color: var(--text-muted);
+        }
+        
+        .photo-grid img:focus-visible {
+            outline: 2px solid var(--accent);
+            transform: scale(1.03);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100dvh; 
+            background-color: rgba(0, 0, 0, 0.94);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: none; 
+            overscroll-behavior: none; 
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 92%;
+            max-height: 78%;
+            object-fit: contain;
+            border-radius: 4px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.9);
+            animation: zoomIn 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+            pointer-events: none; 
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.92); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .close-lightbox {
+            position: absolute;
+            top: calc(20px + env(safe-area-inset-top, 0px));
+            right: 20px;
+            color: #ffffff;
+            font-size: 36px;
+            font-weight: 300;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+            transition: background 0.2s, color 0.2s;
+            z-index: 2100;
+        }
+
+        .close-lightbox:hover, .close-lightbox:focus-visible {
+            background: var(--accent);
+            color: #000000;
+            outline: none;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+            pointer-events: none;
+            z-index: 2050;
+        }
+
+        .lightbox-nav span {
+            color: #ffffff;
+            font-size: 24px;
+            cursor: pointer;
+            background: rgba(255,255,255,0.08);
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            pointer-events: auto;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .lightbox-nav span:hover, .lightbox-nav span:focus-visible {
+            background: var(--accent);
+            color: #000000;
+            outline: none;
+        }
+
+        /* Обновленная плавающая панель с тремя аккуратными кнопками */
+        .compact-action-bar {
+            position: fixed;
+            bottom: calc(15px + env(safe-area-inset-bottom, 0px));
+            right: 15px;
+            display: flex;
+            gap: 6px;
+            z-index: 1000;
+        }
+
+        .action-btn {
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 10px 14px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+        
+        .action-btn:active {
+            transform: scale(0.96);
+        }
+
+        .action-btn.call {
+            background-color: var(--accent);
+            color: #000000;
+        }
+
+        .action-btn.tg {
+            background-color: #222222;
+            color: #29b6f6;
+            border: 1px solid #333333;
+        }
+
+        .action-btn.write {
+            background-color: #222222;
+            color: var(--text-main);
+            border: 1px solid #333333;
+        }
+
+        footer {
+            background-color: #000000;
+            border-top: 1px solid var(--border);
+            padding: 40px 20px 30px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer-legal-block {
+            background: #111111;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto 25px auto;
+            padding: 20px;
+            text-align: left;
+            font-size: 12.5px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .footer-legal-title {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-disclaimer {
+            font-size: 11px;
+            color: #666666;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        /* Cookie баннер с двумя кнопками */
+        #info-msg-plate {
+            display: none; 
+            position: fixed; 
+            bottom: 20px; 
+            left: 20px; 
+            right: 20px; 
+            max-width: 440px; 
+            background: #141414; 
+            border: 1px solid #262626; 
+            padding: 16px; 
+            border-radius: 8px; 
+            z-index: 3000; 
+            box-shadow: 0 6px 24px rgba(0,0,0,0.85); 
+            flex-direction: column; 
+            gap: 12px;
+        }
+
+        .cookie-btn-group {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .cookie-btn-accept {
+            flex: 1;
+            background: #ffcc00; 
+            color: #000000; 
+            border: none; 
+            padding: 9px 12px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            font-size: 11.5px; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px;
+            transition: opacity 0.2s;
+        }
+
+        .cookie-btn-decline {
+            flex: 1;
+            background: #222222; 
+            color: #ffffff; 
+            border: 1px solid #333333; 
+            padding: 9px 12px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            font-size: 11.5px; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px;
+            transition: background 0.2s;
+        }
+
+        .cookie-btn-decline:hover {
+            background: #2a2a2a;
+        }
+
+        .cookie-btn-accept:hover {
+            opacity: 0.9;
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                padding: 100px 20px;
+            }
+            .hero h1 {
+                font-size: 42px;
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .photo-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .compact-action-bar {
+                bottom: calc(25px + env(safe-area-inset-bottom, 0px));
+                right: 25px;
+                gap: 8px;
+            }
+            .action-btn {
+                font-size: 12px;
+                padding: 11px 18px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .features-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">Альп<span>Союз</span></div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 2px;">
+                <span style="font-size: 11px; color: var(--text-muted); letter-spacing: 0.5px;">ИП Бибиков М.В.</span>
+                <a href="tel:+79081324057" class="phone-top">+7 (908) 132-40-57</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Промышленный альпинизм и высотные работы в Воронеже</h1>
+        <p style="color: var(--accent); font-weight: bold; font-size: 15px; text-transform: none; margin-top: 10px;">Профессиональные решения для задач на высотных объектах</p>
+    </section>
+
+    <main>
+        <div class="section-title">Наши преимущества</div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>Квалификация</h3>
+                <p>Регулярная переаттестация, знание индустриальных стандартов и технологий верхолазных работ на объектах различной сложности.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Допуски на высоту</h3>
+                <p>Работники имеют действующие удостоверения о допуске к работам на высоте и соответствующие 1, 2 и 3 группы по безопасности работ на высоте согласно Приказу Минтруда России № 782н.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Безопасность</h3>
+                <p>Сертифицированное снаряжение (ГОСТ / EN), двухверевочная система страховки с соблюдением требований охраны труда и применимых требований безопасности.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Официально</h3>
+                <p>Работаем по прозрачному договору подряда, с фиксированной сметой, безналичным расчетом и гарантией на выполненные работы.</p>
+            </div>
+        </div>
+
+        <div class="section-title">Наши услуги</div>
+        <div class="services-grid">
+            
+            <details class="card" style="order: 1;">
+                <summary>
+                    <img class="card-main-img" src="15.jpg" alt="Архитектурная подсветка">
+                    <div class="card-info">
+                        <div class="card-title">Архитектурная подсветка</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Монтаж контурного освещения, прожекторов направленного света и декоративной иллюминации на коммерческих фасадах, башнях и мостовых сооружениях.</p>
+                    <div class="photo-grid">
+                        <img src="15.jpg" alt="Иллюминация под мостом" tabindex="0">
+                        <img src="16.jpg" alt="Подсветка моста с флагами" tabindex="0">
+                        <img src="4.jpg" alt="Подсветка конструкций" tabindex="0">
+                        <img src="13.jpg" alt="Подсветка фасада башни" tabindex="0">
+                        <img src="18.jpg" alt="Подъем элементов освещения" tabindex="0">
+                        <img src="23.jpg" alt="Восстановление карниза" tabindex="0">
+                        <img src="24.jpg" alt="Армирование кирпичной кладки" tabindex="0">
+                        <img src="21.jpg" alt="Дополнительное фото подсветки" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+            <details class="card" style="order: 2;">
+                <summary>
+                    <img class="card-main-img" src="3.jpg" alt="Замена стеклопакетов">
+                    <div class="card-info">
+                        <div class="card-title">Замена стеклопакетов</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Установка и замена тяжелых стеклопакетов большой площади, панорамного фасадного остекления. Выполнение монтажных работ на высотных объектах с использованием вакуумных захватов.</p>
+                    <div class="photo-grid">
+                        <img src="3.jpg" alt="Высотный монтаж остекления" tabindex="0">
+                        <img src="19.jpg" alt="Подготовка крупногабаритного стекла" tabindex="0">
+                        <img src="20.jpg" alt="Монтаж панорамного остекления" tabindex="0">
+                        <img src="22.jpg" alt="Реконструкция элементов остекления" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+            <details class="card" style="order: 3;">
+                <summary>
+                    <img class="card-main-img" src="7.jpg" alt="Монтаж металлоконструкций">
+                    <div class="card-info">
+                        <div class="card-title">Монтаж металлоконструкций</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Фиксация и сборка вертикальных трубопроводов, промышленных воздуховодов, несущих кронштейнов, защитных экранов и инженерных металлосистем на фасадах зданий.</p>
+                    <div class="photo-grid">
+                        <img src="7.jpg" alt="Монтажные элементы" tabindex="0">
+                        <img src="8.jpg" alt="Вертикальный трубопровод на фасаде" tabindex="0">
+                        <img src="29.jpg" alt="Новый элемент металлоконструкции" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+            <details class="card" style="order: 4;">
+                <summary>
+                    <img class="card-main-img" src="5.jpg" alt="Сварка на высоте">
+                    <div class="card-info">
+                        <div class="card-title">Сварка на высоте</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Высотные сварочные работы на промышленных и гражданских объектах. Сварка каркасов, трубопроводов, газоходов и устранение дефектов конструкций с соблюдением требований безопасности.</p>
+                    <div class="photo-grid">
+                        <img src="5.jpg" alt="Сварка трубы на высоте" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+            <details class="card" style="order: 5;">
+                <summary>
+                    <img class="card-main-img" src="17.jpg" alt="Подъем негабаритных грузов">
+                    <div class="card-info">
+                        <div class="card-title">Подъем негабаритных грузов</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Безопасный подъем оборудования, кондиционеров, вентиляционных блоков и крупногабаритной мебели на высотные объекты с применением специализированных лебедок и такелажных систем.</p>
+                    <div class="photo-grid">
+                        <img src="17.jpg" alt="Альпинист на такелажных работах" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+            <details class="card" style="order: 6;">
+                <summary>
+                    <img class="card-main-img" src="2.jpg" alt="Слаботочные системы">
+                    <div class="card-info">
+                        <div class="card-title">Слаботочные системы</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Монтаж и обслуживание слаботочных сетей на высоте: прокладка кабельных трасс, фиксация уличных камер видеонаблюдения, датчиков и сетевых модулей.</p>
+                    <div class="photo-grid">
+                        <img src="2.jpg" alt="Монтаж иллюминации" tabindex="0">
+                        <img src="28.jpg" alt="Индустриальный мониторинг" tabindex="0">
+                        <img src="27.jpg" alt="Промышленные потолочные системы" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+            <details class="card" style="order: 7;">
+                <summary>
+                    <img class="card-main-img" src="14.jpg" alt="Монтаж газоходов">
+                    <div class="card-info">
+                        <div class="card-title">Монтаж газоходов</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Монтаж, стыковка и замена секций промышленных вертикальных газоходов, систем дымоудаления, вентиляционных шахт и теплоизоляция вытяжных труб.</p>
+                    <div class="photo-grid">
+                        <img src="14.jpg" alt="Контурное освещение здания" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+            <details class="card" style="order: 8;">
+                <summary>
+                    <img class="card-main-img" src="26.jpg" alt="Ремонт и восстановление фасадов">
+                    <div class="card-info">
+                        <div class="card-title">Ремонт и восстановление фасадов</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Локальные аварийно-восстановительные работы на фасадах: ремонт и укрепление кирпичной кладки, реставрация карнизов, герметизация межпанельных швов и устранение аварийных участков.</p>
+                    <div class="photo-grid">
+                        <img src="26.jpg" alt="Внутренние галереи элеватора" tabindex="0">
+                        <img src="6.jpg" alt="Фиксация трубных креплений" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+            <details class="card" style="order: 9;">
+                <summary>
+                    <img class="card-main-img" src="9.jpg" alt="Ремонт и монтаж элеваторов">
+                    <div class="card-info">
+                        <div class="card-title">Ремонт и монтаж элеваторов</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Промышленный клининг и ремонт силосов, герметизация межпанельных стыков, покраска металлоконструкций, восстановление галерей и технологических систем.</p>
+                    <div class="photo-grid">
+                        <img src="9.jpg" alt="Слаботочка на объекте" tabindex="0">
+                        <img src="10.jpg" alt="Кабельные трассы элеватора" tabindex="0">
+                        <img src="30.jpg" alt="Ремонтные работы на силосе" tabindex="0">
+                        <img src="31.jpg" alt="Монтаж оборудования элеватора" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+            <details class="card" style="order: 10;">
+                <summary>
+                    <img class="card-main-img" src="11.jpg" alt="Мытьё остекления и фасадов">
+                    <div class="card-info">
+                        <div class="card-title">Мытьё остекления и фасадов зданий</div>
+                        <div class="card-action-text">Описание и примеры</div>
+                    </div>
+                </summary>
+                <div class="card-expanded">
+                    <p class="card-desc">Мытье окон, панорамного остекления, витражей и фасадов жилых и коммерческих зданий на высоте. Удаление строительных, сезонных и атмосферных загрязнений.</p>
+                    <div class="photo-grid">
+                        <img src="11.jpg" alt="Архитектурная подсветка фасада" tabindex="0">
+                        <img src="12.jpg" alt="Высотная мойка" tabindex="0">
+                        <img src="1.jpg" alt="Монтаж металлоконструкций" tabindex="0">
+                    </div>
+                </div>
+            </details>
+
+        </div>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" tabindex="0" role="button" aria-label="Закрыть галерею">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="">
+        <div class="lightbox-nav">
+            <span id="prev-btn" tabindex="0" role="button" aria-label="Предыдущее фото">&#10094;</span>
+            <span id="next-btn" tabindex="0" role="button" aria-label="Следующее фото">&#10095;</span>
+        </div>
+    </div>
+
+    <!-- Плавающая панель с 3 аккуратными кнопками -->
+    <div class="compact-action-bar">
+        <a href="tel:+79081324057" class="action-btn call">Позвонить</a>
+        <a href="https://t.me/maxbibsun" target="_blank" rel="noopener noreferrer" class="action-btn tg">Telegram</a>
+        <a href="https://max.ru/u/f9LHodD0cOKhG3TQOyWZsSbNuCedfaFMN9NFzCGKRrjk-pStHuXCOqbFujY" target="_blank" rel="noopener noreferrer" class="action-btn write">Max</a>          
+    </div>
+
+    <footer>
+        <div class="footer-legal-block">
+            <div class="footer-legal-title">Реквизиты исполнителя</div>
+            <p><strong>Индивидуальный предприниматель:</strong> Бибиков Максим Валерьевич</p>
+            <p><strong>ОГРНИП:</strong> 317366800004911 | <strong>ИНН:</strong> 366516349522</p>
+            <p><strong>Дата государственной регистрации:</strong> 23.01.2017</p>
+            <p><strong>Регистрирующий орган:</strong> Межрайонная инспекция ФНС России № 12 по Воронежской области</p>
+            <p><strong>Адрес регистрации:</strong> 394000, г. Воронеж, ул. Малышевская, д. 30</p>
+            <p><strong>Режим работы:</strong> Пн–Вс с 08:00 до 20:00 (без выходных)</p>
+            <p><strong>Телефон:</strong> <a href="tel:+79081324057" style="color: var(--accent); text-decoration: none;">+7 (908) 132-40-57</a> | <strong>E-mail:</strong> <a href="mailto:89081324057@mail.ru" style="color: var(--accent); text-decoration: none;">89081324057@mail.ru</a></p>
+        </div>
+
+        <p class="footer-disclaimer">
+            Внимание: Информация, размещенная на сайте, носит исключительно рекламно-информационный характер и не является публичной офертой, определяемой положениями п. 2 ст. 437 Гражданского кодекса РФ. Окончательная стоимость, состав и сроки выполнения высотных работ согласовываются индивидуально в договоре подряда после технического осмотра объекта.
+        </p>
+
+        <p style="margin-bottom: 12px; font-size: 13px;">&copy; 2026 АльпСоюз. Промышленный альпинизм в Воронеже.</p>
+
+        <p style="font-size: 11px; line-height: 1.6;">
+            <a href="privacy.html" style="color: var(--text-muted); text-decoration: none; border-bottom: 1px dashed var(--text-muted);">Политика обработки персональных данных</a>
+            <span style="color: var(--text-muted); margin: 0 8px;">•</span>
+            <button id="cookie-settings-btn" style="background: none; border: none; padding: 0; color: var(--text-muted); font-size: 11px; cursor: pointer; border-bottom: 1px dashed var(--text-muted); font-family: inherit;">Настройки cookie</button>
+        </p>
+    </footer>
+
+    <!-- Баннер согласия с двумя кнопками по ТЗ -->
+    <div id="info-msg-plate" style="display: none;">
+        <p style="margin: 0; font-size: 12.5px; color: #aaaaaa; line-height: 1.4;">
+            Мы используем технические cookie, необходимые для работы сайта, а с вашего согласия — Яндекс.Метрику для анализа посещаемости. Подробнее — в 
+            <a href="privacy.html" style="color: #ffcc00; text-decoration: none; border-bottom: 1px dashed #ffcc00;">Политике обработки персональных данных</a>.
+        </p>
+        <div class="cookie-btn-group">
+            <button id="info-msg-accept" class="cookie-btn-accept">Разрешить аналитику</button>
+            <button id="info-msg-decline" class="cookie-btn-decline">Отказаться</button>
+        </div>
+    </div>
+
+    <script>
+        function loadYandexMetrika() {
+            if (window.ymInitialized) return;
+            window.ymInitialized = true;
+
+            const YM_ID = 00000000;
+
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(YM_ID, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.querySelector('.close-lightbox');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const header = document.querySelector('header');
+            
+            let currentImages = [];
+            let currentIndex = 0;
+
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            function getScrollbarWidth() {
+                return window.innerWidth - document.documentElement.clientWidth;
+            }
+
+            function preloadAdjacentImages() {
+                if (currentImages.length <= 1) return;
+                const prevIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+                const nextIndex = (currentIndex + 1) % currentImages.length;
+                
+                const imgPrev = new Image();
+                imgPrev.src = currentImages[prevIndex];
+                
+                const imgNext = new Image();
+                imgNext.src = currentImages[nextIndex];
+            }
+
+            function openLightbox() {
+                const sbWidth = getScrollbarWidth();
+                
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                document.documentElement.style.overflow = 'hidden';
+                
+                if (sbWidth > 0) {
+                    document.body.style.paddingRight = `${sbWidth}px`;
+                    if (header) {
+                        header.style.paddingRight = `calc(20px + ${sbWidth}px)`;
+                    }
+                }
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+                document.documentElement.style.overflow = '';
+                document.body.style.paddingRight = '';
+                if (header) {
+                    header.style.paddingRight = '';
+                }
+            }
+
+            document.querySelectorAll('.card').forEach(card => {
+                const thumbImgs = Array.from(card.querySelectorAll('.photo-grid img'));
+                
+                thumbImgs.forEach(img => {
+                    img.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        currentImages = thumbImgs.map(i => i.src);
+                        currentIndex = currentImages.indexOf(img.src);
+                        
+                        updateLightboxImage();
+                        openLightbox();
+                    });
+
+                    img.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter') {
+                            e.preventDefault();
+                            img.click();
+                        }
+                    });
+                });
+
+                const mainImg = card.querySelector('.card-main-img');
+                if(mainImg) {
+                    mainImg.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                    });
+                }
+            });
+
+            function updateLightboxImage() {
+                lightboxImg.src = currentImages[currentIndex];
+                preloadAdjacentImages(); 
+            }
+
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (currentImages.length <= 1) return;
+                currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+                updateLightboxImage();
+            });
+
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (currentImages.length <= 1) return;
+                currentIndex = (currentIndex + 1) % currentImages.length;
+                updateLightboxImage();
+            });
+            
+            [prevBtn, nextBtn, closeBtn].forEach(btn => {
+                btn.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        btn.click();
+                    }
+                });
+            });
+
+            lightbox.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            lightbox.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipeGesture();
+            }, { passive: true });
+
+            lightbox.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+            }, { passive: false });
+
+            function handleSwipeGesture() {
+                const swipeThreshold = 40; 
+                if (currentImages.length <= 1) return;
+                
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    nextBtn.click();
+                } else if (touchEndX > touchStartX + swipeThreshold) {
+                    prevBtn.click();
+                }
+            }
+
+            closeBtn.addEventListener('click', closeLightbox);
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') prevBtn.click();
+                if (e.key === 'ArrowRight') nextBtn.click();
+            });
+
+            // Логика согласия на Cookie с двумя кнопками и отзывом
+            const banner = document.getElementById('info-msg-plate');
+            const acceptBtn = document.getElementById('info-msg-accept');
+            const declineBtn = document.getElementById('info-msg-decline');
+            const settingsBtn = document.getElementById('cookie-settings-btn');
+
+            const currentChoice = localStorage.getItem('user_cookie_consent');
+
+            if (currentChoice === 'granted') {
+                loadYandexMetrika();
+            } else if (currentChoice === 'denied') {
+                // Отказ зафиксирован, Метрика не загружается
+            } else {
+                if (banner) banner.style.display = 'flex';
+            }
+
+            if (acceptBtn) {
+                acceptBtn.addEventListener('click', () => {
+                    localStorage.setItem('user_cookie_consent', 'granted');
+                    if (banner) banner.style.display = 'none';
+                    loadYandexMetrika();
+                });
+            }
+
+            if (declineBtn) {
+                declineBtn.addEventListener('click', () => {
+                    localStorage.setItem('user_cookie_consent', 'denied');
+                    if (banner) banner.style.display = 'none';
+                });
+            }
+
+            if (settingsBtn) {
+                settingsBtn.addEventListener('click', () => {
+                    if (banner) banner.style.display = 'flex';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
